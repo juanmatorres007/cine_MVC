@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #000; 
+    color: #fff;
+}
+.menu {
+    display: flex;
+}
+.logo img{
+    width: 150px;
+    margin-left: 5px;
+}
+
+.user{
+    justify-content: flex-end;
+    display: flex;
+    margin-left: 18%; 
+    text-align: center;
+    align-items: center;
+}
+
+.foto img {
+
+    width: 100px;
+}
+.header{
+     background-color: #564d4d;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.header .btn-menu {
+    float: left;
+}
+
+.header .btn-menu label {
+    color: #0e0d0d;
+    font-size: 250%;
+    cursor: pointer;
+}
+
+
+/*menu laterals*/
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: absolute;
+    background: #ae061167;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(-0%);
+
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+
+
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+
+}
+
+.gallery::-webkit-scrollbar {
+    width: 4px; /* Ancho de la barra de desplazamiento en navegadores de WebKit (por ejemplo, Chrome, Safari) */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0); /* Color rojo con transparencia para el pulgar de la barra de desplazamiento */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.gallery::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0); /* Color negro con transparencia para la pista de la barra de desplazamiento */
+}
+
+.gallery img {
+    width: 200px;
+    height: 300px;
+    margin-right: 10px;
+}
+

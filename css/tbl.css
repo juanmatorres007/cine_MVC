@@ -1,0 +1,34 @@
+body{
+    background-image: url(../img/pexels-nathan-engel-436413\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.form{
+    border-radius: 20px;
+    background-color: rgb(97, 2, 2);
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.tipeid, input{
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+table {
+    color: white;
+    table-layout: fixed;
+    width: 250px;
+}
+th, td {
+    width: 100px;
+    word-wrap: break-word;
+}
